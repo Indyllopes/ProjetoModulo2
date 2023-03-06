@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C0D1NG</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            font-family: 'PT Serif', serif;
+
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+        </div>
+    </div>
+    <main>
+        <form class="forms" name="formulario">
+            <br>
+            <h1>C0D1NG</h1>
+            <section>
+                <label><strong>Mensagem:</strong></label>
+             <br>   
+                <textarea name="texto" id="texto" class="inputTexto" cols="60" rows="6" placeholder="Digite a sua mensagem..."></textarea>
+            </section>
+
+            <div class="opcao">
+                <select name="escolhaMetodo" class="escolhaMetodo" id="opcaoMetodo" required>
+                    <br>
+                    <option value="semValor" id="semValor" disabled selected>Método de Codificação</option>
+                    <option value="cifraCesar" id="cifraCesar">Cifra de César</option>
+                    <option value="Base64" id="base64">Base 64</option>
+                </select>
+            </div>
+
+            <div class="incremento" style="display: none" id="valorIncremento">
+                <label for="">Incremento</label> <input type="number" class="inputIncremento" id="valorIncremento"
+                    default="0" min="1" max="26" value="1" maxlength="2" size="4" />
+            </div>
+
+            <div class="codeDecode">
+                <input type="radio" name="codificar" id="codificar" class="btnCodeDecode" value="codificar" required />
+                <label for="codificar">Codificar</label>
+                <input type="radio" name="codificar" id="decodificar" class="btnCodeDecode" value="decodificar"
+                    required />
+                <label for="decodificar">Decodificar</label>
+            </div>
+            <div class="btn">
+                <button id="btnIniciar">Criptografar</button>
+            </div>
+            <br>
+        </section>
+
+            <label><strong>Resultado:</strong></label>
+        <br>
+             <textarea name="resultado" id="resultado" cols="60" rows="6"  class="caixa"></textarea>
+        </section>
+        </form>
+    </main>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

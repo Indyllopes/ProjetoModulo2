@@ -1,0 +1,61 @@
+*{
+    margin-top: 10px;
+    }
+
+    html {
+        background-image: url(https://criandovaloreducacao.com.br/wp-content/uploads/2020/08/imagem-cursos_Prancheta-1-1.png);
+    }
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    font-family: 'VT323', monospace;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  
+
+  
+  .principal {
+    background-color: #1e1e1e;
+    position: relative;
+    text-align: center;
+    border: 20px solid #1e1e1e;
+    margin: 20px;
+    border-radius: 2%;
+    
+  }
+  
+  
+  .manual{
+    background-color: #1e1e1e;
+    position:relative ;
+    text-align: center;
+    border: 20px solid #1e1e1e;
+    margin: 20px;
+    border-radius: 2%;
+    margin-top: 0;
+  }
+  
+  
+  
+  #entrada{
+    width: 270px;
+    height: 70px;
+  }
+  
+  #saida{
+    width: 270px;
+    height: 70px;
+  }
+  
+  .incremento{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
